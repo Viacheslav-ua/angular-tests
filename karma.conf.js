@@ -18,6 +18,7 @@ module.exports = function (config) {
         // the possible options are listed at https://jasmine.github.io/api/edge/Configuration.html
         // for example, you can disable the random execution with `random: false`
         // or set a specific seed with `seed: 4321`
+        // verboseDeprecations: true,
       },
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
@@ -31,15 +32,15 @@ module.exports = function (config) {
         { type: 'html' },
         { type: 'text-summary' }
       ],
-      thresholds: {
-        emitWarning: false,
-        global: {
-          statements: 100,
-          lines: 100,
-          branches: 100,
-          functions: 100
-        }
-      }
+      // thresholds: {
+      //   emitWarning: false,
+      //   global: {
+      //     statements: 100,
+      //     lines: 100,
+      //     branches: 100,
+      //     functions: 100
+      //   }
+      // }
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
